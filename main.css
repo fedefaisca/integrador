@@ -1,4 +1,4 @@
-/* General Styles */
+/* ESTILOS GENERALES */
 
 * {
     margin: 0;
@@ -34,7 +34,6 @@ body {
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    /* grid-template-columns: repeat(4, 1fr) 3%; */
     grid-template-columns: repeat(5, 1fr);
 }
 
