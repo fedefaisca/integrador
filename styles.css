@@ -22,3 +22,21 @@
     font-style: "regular";
     font-weight: 400;
 }
+
+/*ANIMACION HOVER DEL NAV*/
+/* *aclaracion al usar position 'absolute' en los .nav-item se tuvo que agregar .position-relative de bootstrap*/
+.hover-beauty::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background:rgb(12, 97, 194);
+    position:absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s ease-out;
+}
+.hover-beauty:hover:before{        
+    width: 100%;
+}
+
+/*FIN DE ANIMACION*/
