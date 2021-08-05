@@ -29,7 +29,7 @@
     content: "";
     height: 3px;
     width: 0%;
-    background:rgb(12, 97, 194);
+    background:#0d6efd;
     position:absolute;
     left: 0;
     bottom: -1px;
@@ -41,3 +41,60 @@
 /*FIN DE ANIMACION*/
 
 /* flechitas del carousel en negro */
+
+/*  boton cheto en registrarse.html    */
+.btn-snake:hover {
+    /* color: var(--secondary-color); */
+    background:#0d6efd;
+    box-shadow: 0 0 20px #0d6efd, 0 0 80px #0d6efd,
+      0 0 160px #0d6efd, 0 0 320px #0d6efd;
+    transition-delay: 1s;
+  }
+  .btn-snake span {
+    position: absolute;
+    display: block;
+  }
+  .btn-snake span:nth-child(1) {
+    top: 0;
+    transform: translateX(-115%);
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent,#0d6efd);
+  }
+  .btn-snake:hover span:nth-child(1) {
+    transform: translateX(100%);
+    transition: 1s;
+  }
+  .btn-snake span:nth-child(3) {
+    bottom: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #0d6efd);
+  }
+  .btn-snake:hover span:nth-child(3) {
+    transform: translateX(-115%);
+    transition: 1s 0.5s;
+  }
+  .btn-snake span:nth-child(2) {
+    right: 0;
+    transform: translateY(-130%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0d6efd);
+  }
+  .btn-snake:hover span:nth-child(2) {
+    transform: translateY(100%);
+    transition: 1s 0.25s;
+  }
+  .btn-snake span:nth-child(4) {
+    left: 0;
+    transform: translateY(100%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0d6efd);
+  }
+  .btn-snake:hover span:nth-child(4) {
+    transform: translateY(-130%);
+    transition: 1s 0.75s;
+  }
